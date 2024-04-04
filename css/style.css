@@ -62,24 +62,40 @@ img{
 section {
   display: flex;
   width: 900px;
-  height: 430px;
+  height: 630px;
 }
 section img {
   width: 0px;
   flex-grow: 1;
-  object-fit: cover;
+  object-fit: cover ;
   opacity: 0.8;
   transition: 0.5s ease;
 }
 section img:hover {
   cursor: crosshair;
   width: 300px;
+  
   opacity: 1;
   filter: contrast(120%);
 }
 
 
 @media(max-width:900px){
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  img{
+    width: 100%;
+    padding: 0;
+  }
+  #hero {
+    min-height: 90vh;
+    position: relative;
+  }
   .promo h1, h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 2rem;
@@ -88,9 +104,16 @@ section img:hover {
     font-weight: 50;
   }
 
+  #videoSponsor {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+  
   section {
     display: flex;
-    width: 400px;
+    width: 320px;
     height: 230px;
   }
   section img {
@@ -102,7 +125,7 @@ section img:hover {
   }
   section img:hover {
     cursor: crosshair;
-    width: 80px;
+    width: 110px;
     opacity: 1;
     filter: contrast(120%);
   }
