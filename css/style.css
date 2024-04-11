@@ -7,7 +7,7 @@
 }
 
 img{
-  width: 100%;
+  width: 1200px;
   padding: 0;
 }
 
@@ -19,13 +19,13 @@ img{
 
 #videoSponsor {
   width: 90%;
-  border-radius: 10px;
+  border-radius: 1%;
   margin-bottom: 30px;
 }
 
 #videoInfo {
   width: 70%;
-  border-radius: 10px;
+  border-radius: 1%;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -79,6 +79,7 @@ section img:hover {
   filter: contrast(120%);
 }
 
+/* Query */
 
 @media(max-width:900px){
 
@@ -87,9 +88,20 @@ section img:hover {
     padding: 0;
     box-sizing: border-box;
   }
+
+  #videoFondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
   
   img{
-    width: 100%;
+    width: 320px;
     padding: 0;
   }
   #hero {
@@ -106,7 +118,7 @@ section img:hover {
 
   #videoSponsor {
     width: 80%;
-    border-radius: 10px;
+    border-radius: 1%;
     margin-bottom: 30px;
   }
 
